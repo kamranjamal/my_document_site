@@ -11,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="w-64 bg-gray-800 text-white h-screen p-4   fixed top-0 left-0">
+    <aside className="w-64 bg-black text-white h-screen p-4   fixed top-0 left-0">
       <h2 className="text-xl font-semibold mb-4">Documentation</h2>
 
       {/* Sidebar Sections */}

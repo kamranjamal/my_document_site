@@ -5,7 +5,7 @@ import { BiSearch } from 'react-icons/bi';
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-gray-800 p-4 fixed top-0 right-0 w-[82%]">
+      <nav className="bg-black p-4 fixed top-0 right-0 w-[82%] z-50">
         <div className="container mx-auto flex items-center justify-between">
           {/* Search Bar with Icon */}
        <div className='flex gap-4 w-1/2'>
