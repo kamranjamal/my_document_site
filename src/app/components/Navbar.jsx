@@ -9,6 +9,7 @@ import { BiSearch } from 'react-icons/bi';
 import { jsAdvancedConcepts } from '../docs/javascript/advanced/data';
 import { jsFundamentals } from '../docs/javascript/basics/data';
 import { es6Features } from '../docs/javascript/es6/data';
+import { reactDocs } from '../docs/react/introduction/data';
 
 const Navbar = () => {
   const [query, setQuery] = useState('');
@@ -20,6 +21,7 @@ const Navbar = () => {
     ...jsFundamentals.map((item) => ({ ...item, page: '/docs/javascript/basics' })),
     ...es6Features.map((item) => ({ ...item, page: '/docs/javascript/es6' })),
     ...jsAdvancedConcepts.map((item) => ({ ...item, page: '/docs/javascript/advanced' })),
+    ...reactDocs.map((item) => ({ ...item, page: '/docs/react/introduction' })),
   ];
 
   // Filter data based on query
