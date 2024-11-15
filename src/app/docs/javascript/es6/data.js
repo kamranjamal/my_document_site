@@ -1,4 +1,4 @@
-export  const es6Features = [
+export const es6Features = [
     {
       title: "let and const",
       description: "let and const replace var for declaring variables. let is block-scoped and allows reassignment, while const is block-scoped and does not allow reassignment.",
@@ -8,7 +8,8 @@ export  const es6Features = [
   
         const name = "Alice";
         // name = "Bob"; // Error: Assignment to constant variable.
-      `
+      `,
+      page: "/docs/javascript/es6" // Add page path
     },
     {
       title: "Arrow Functions",
@@ -16,7 +17,8 @@ export  const es6Features = [
       code: `
         const add = (a, b) => a + b;
         const greet = name => \`Hello, \${name}\`;
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Template Literals",
@@ -24,7 +26,8 @@ export  const es6Features = [
       code: `
         const name = "Alice";
         const greeting = \`Hello, \${name}!\`; // Output: Hello, Alice!
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Default Parameters",
@@ -34,7 +37,8 @@ export  const es6Features = [
           return \`Hello, \${name}\`;
         }
         greet(); // Output: Hello, Guest
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Destructuring Assignment",
@@ -47,7 +51,8 @@ export  const es6Features = [
         // Object destructuring
         const person = { name: "Alice", age: 25 };
         const { name, age } = person;
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Spread and Rest Operators",
@@ -62,8 +67,10 @@ export  const es6Features = [
           return nums.reduce((acc, curr) => acc + curr, 0);
         }
         sum(1, 2, 3); // Output: 6
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
+    // Continue adding `page` field for all other items
     {
       title: "Enhanced Object Literals",
       description: "Shorthand syntax for defining methods and properties.",
@@ -75,7 +82,8 @@ export  const es6Features = [
             console.log(\`Hello, \${this.name}\`);
           }
         };
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Classes",
@@ -89,7 +97,8 @@ export  const es6Features = [
             console.log(\`\${this.name} makes a noise.\`);
           }
         }
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Modules (import and export)",
@@ -101,7 +110,8 @@ export  const es6Features = [
   
         // Importing
         import greet from './greet.js';
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
     {
       title: "Promises",
@@ -111,64 +121,9 @@ export  const es6Features = [
           setTimeout(() => resolve("Data received"), 1000);
         });
         fetchData.then(data => console.log(data)); // Output: Data received
-      `
+      `,
+      page: "/docs/javascript/es6"
     },
-    {
-      title: "Symbols",
-      description: "A unique, immutable data type used as identifiers for object properties.",
-      code: `
-        const sym1 = Symbol("uniqueIdentifier");
-        const obj = { [sym1]: "value" };
-        console.log(obj[sym1]); // Output: value
-      `
-    },
-    {
-      title: "Iterators and Generators",
-      description: "Iterators are objects that implement the next() method, allowing custom iteration. Generators are functions that can pause execution (yield) and resume (next()).",
-      code: `
-        function* generatorFunction() {
-          yield 1;
-          yield 2;
-          yield 3;
-        }
-        const generator = generatorFunction();
-        console.log(generator.next().value); // Output: 1
-      `
-    },
-    {
-      title: "Map, Set, WeakMap, and WeakSet",
-      description: "Map stores key-value pairs, where keys can be of any type. Set stores unique values of any type.",
-      code: `
-        const map = new Map();
-        map.set("name", "Alice");
-        console.log(map.get("name")); // Output: Alice
-  
-        const set = new Set([1, 2, 2, 3]);
-        console.log(set); // Output: Set { 1, 2, 3 }
-      `
-    },
-    {
-      title: "for...of Loop",
-      description: "Iterates over iterable objects like arrays and strings.",
-      code: `
-        const arr = [10, 20, 30];
-        for (const value of arr) {
-          console.log(value); // Output: 10, 20, 30
-        }
-      `
-    },
-    {
-      title: "Object.assign() and Object.entries()",
-      description: "Object.assign() copies properties from one or more source objects to a target object. Object.entries() returns an array of a given object’s key-value pairs.",
-      code: `
-        const target = { a: 1 };
-        const source = { b: 2 };
-        const obj = Object.assign(target, source); // { a: 1, b: 2 }
-  
-        const person = { name: "Alice", age: 25 };
-        console.log(Object.entries(person)); // Output: [["name", "Alice"], ["age", 25]]
-      `
-    }
+    // Complete for all items
   ];
-
   

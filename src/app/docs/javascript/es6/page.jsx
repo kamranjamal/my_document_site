@@ -44,16 +44,16 @@ const Home = () => {
         <footer className="mt-12">
           <p className="text-center text-gray-500">
             Learn more at{" "}
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" className="text-gray-300 hover:underline">
+            <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" className="text-gray-300 hover:underline">
               MDN Web Docs
-            </a>
+            </Link>
             .
           </p>
         </footer>
       </div>
 
       <div className="bg-black fixed top-16 p-6 text-[11px] w-52 min-h-screen right-0 flex flex-col gap-1">
-        <h2 className="text-lg font-bold text-white mb-4">Navigation</h2>
+     
         {es6Features.map((feature, index) => (
           <Link
             key={index}

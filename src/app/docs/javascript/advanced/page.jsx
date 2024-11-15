@@ -53,9 +53,9 @@ const Home = () => {
       <footer className="mt-12">
         <p className="text-center text-gray-500">
           Explore more resources at{" "}
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" className="text-gray-300 hover:underline">
+          <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" className="text-gray-300 hover:underline">
             MDN Web Docs
-          </a>
+          </Link>
           .
         </p>
       </footer>
