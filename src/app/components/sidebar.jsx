@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   return (
     <aside className="w-64 bg-black text-white h-screen p-4   fixed top-0 left-0">
-      <h2 className="text-xl font-semibold mb-4">Documentation</h2>
+      <h2 className="text-xl font-semibold mb-4"><Link href={"/"}>Easy Docs</Link></h2>
 
       {/* Sidebar Sections */}
       <div className="space-y-4 mt-20">

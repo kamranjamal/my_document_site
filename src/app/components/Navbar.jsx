@@ -10,6 +10,10 @@ import { jsAdvancedConcepts } from '../docs/javascript/advanced/data';
 import { jsFundamentals } from '../docs/javascript/basics/data';
 import { es6Features } from '../docs/javascript/es6/data';
 import { reactDocs } from '../docs/react/introduction/data';
+import { reactHooks } from '../docs/react/hooks/data';
+import { reactContext } from '../docs/react/context/data';
+import { nodeJsOverview } from '../docs/nodejs/overview/data';
+
 
 const Navbar = () => {
   const [query, setQuery] = useState('');
@@ -22,6 +26,10 @@ const Navbar = () => {
     ...es6Features.map((item) => ({ ...item, page: '/docs/javascript/es6' })),
     ...jsAdvancedConcepts.map((item) => ({ ...item, page: '/docs/javascript/advanced' })),
     ...reactDocs.map((item) => ({ ...item, page: '/docs/react/introduction' })),
+    ...reactHooks.map((item) => ({ ...item, page: '/docs/react/hooks' })),
+    ...reactContext.map((item) => ({ ...item, page: '/docs/react/context' })),
+    ...nodeJsOverview.map((item) => ({ ...item, page: '/docs/nodejs/overview' })),
+  
   ];
 
   // Filter data based on query
