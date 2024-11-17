@@ -13,6 +13,8 @@ import { reactDocs } from '../docs/react/introduction/data';
 import { reactHooks } from '../docs/react/hooks/data';
 import { reactContext } from '../docs/react/context/data';
 import { nodeJsOverview } from '../docs/nodejs/overview/data';
+import { moduleData } from '../docs/nodejs/modules/data';
+import { nodeJsApi } from '../docs/nodejs/api/data';
 
 
 const Navbar = () => {
@@ -29,6 +31,8 @@ const Navbar = () => {
     ...reactHooks.map((item) => ({ ...item, page: '/docs/react/hooks' })),
     ...reactContext.map((item) => ({ ...item, page: '/docs/react/context' })),
     ...nodeJsOverview.map((item) => ({ ...item, page: '/docs/nodejs/overview' })),
+    ...moduleData.map((item) => ({ ...item, page: '/docs/nodejs/modules' })),
+    ...nodeJsApi.map((item) => ({ ...item, page: '/docs/nodejs/api ' })),
   
   ];
 
