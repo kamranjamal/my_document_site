@@ -27,7 +27,7 @@ const Home = () => {
       <main className="space-y-12">
         {jsAdvancedConcepts.map((concept, idx) => (
           <section key={idx} id={concept.title.toLowerCase().replace(/\s+/g, "-")} className="space-y-6">
-            <h2 className="text-2xl font-semibold">{concept.title}</h2>
+            <h2 className="text-2xl text-white font-semibold">{concept.title}</h2>
             <p className="text-gray-300">{concept.description}</p>
 
             {concept.code && (
