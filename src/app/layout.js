@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         <Sidebar/>
-        <div className="pl-64 p-8 pt-32 bg-zinc-900">
+        <div className="pl-64 p-8 pt-32 text-gray-600 bg-zinc-900">
           
         {children}
         </div>
